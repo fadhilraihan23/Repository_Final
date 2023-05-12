@@ -1,7 +1,5 @@
-<?php 
-session_start();
+<?php
+    session_destroy();
+    echo '<script>window.location="index.php";</script>';
 
-session_unset();
-session_destroy();
-
-header("Location: index.php");
+?>

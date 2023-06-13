@@ -1,8 +1,9 @@
+
 <?php 
-include_once('pages/portofolio.php'); 				
+include_once('./class/class.Protofolio.php'); 				
 
 if(isset($_POST['btnSubmit'])){	
-	 
+	$objPortofolio= new Portofolio(); 
     $objPortofolio->gambar = $_POST['gambar'];	 
 	$objPortofolio->judul = $_POST['judul'];	
     $objPortofolio->deskripsiPortofolio = $_POST['deskripsiPortofolio'];
@@ -31,27 +32,27 @@ else if(isset($_GET['judul'])){
 <div class="col-md-6">			
   <h4 class="title"><span class="text"><strong>Portofolio</strong></span></h4>
   
-    <form action="" method="post">
+    <form action="" method="POST">
 	<table class="table" border="0">
 	<tr>
 	<td>Gambar</td>
 	<td>:</td>
-	<td><input type="file" class="form-control" name="judul" value="<?php $objPortofolio = new Portofolio(); echo $objPortofolio->judul; ?>"></td>
+	<td><input type="file" class="form-control" name="gambar" value="<?php $objPortofolio = new Portofolio(); echo $objPortofolio->gambar; ?>"></td>
 	</tr>	
 	<tr>
 	<td>Judul</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="gambar" value="<?php echo $objPortofolio->gambar; ?>"></td>
+	<td><input type="text" class="form-control" name="judul" value="<?php $objPortofolio = new Portofolio(); echo $objPortofolio->judul; ?>"></td>
 	</tr>	
 	<tr>
 	<td>Deskripsi Portofolio</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="tanggalPortofolio" value="<?php echo $objPortofolio->tanggalPortofolio; ?>"></td>
+	<td><input type="text" class="form-control" name="tanggalPortofolio" value="<?php $objPortofolio = new Portofolio();echo $objPortofolio->tanggalPortofolio; ?>"></td>
 	</tr>	
     <tr>
 	<td>Tanggal Portofolio</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="deskripsiPortofolio" value="<?php echo $objPortofolio->deskripsiPortofolio; ?>"></td>
+	<td><input type="text" class="form-control" name="deskripsiPortofolio" value="<?php $objPortofolio = new Portofolio();echo $objPortofolio->deskripsiPortofolio; ?>"></td>
 	</tr>	
 	
 	<tr>

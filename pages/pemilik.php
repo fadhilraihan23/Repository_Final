@@ -1,8 +1,9 @@
 <?php 
-require_once('./class/class.Pemilik.php'); 				
-$objPemilik = new Pemilik(); 
+require_once('pemilik.php'); 				
+ 
 
 if(isset($_POST['btnSubmit'])){	
+	$objPemilik = new Pemilik();
     $objPemilik->namaPemilik = $_POST['namaPemilik'];	 
 	$objPemilik->emailPemilik = $_POST['emailPemilik'];	
     $objPemilik->passwordPemilik = $_POST['passwordPemilik'];
@@ -12,7 +13,7 @@ if(isset($_POST['btnSubmit'])){
 		$objPemilik->emailPemilik = $_GET['emailPemilik'];
 		$objPemilik->UpdatePemilik();
 	}
-	else{	
+	else {	
 		$objPemilik->AddPemilik();	
 	}	
 	
@@ -35,22 +36,22 @@ else if(isset($_GET['emailPemilik'])){
 	<tr>
 	<td>Email Pemilik</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="emailPemilik" value="<?php echo $objPemilik->emailPemilik; ?>"></td>
+	<td><input type="text" class="form-control" name="emailPemilik" value="<?php $objPemilik = new Pemilik(); echo $objPemilik->emailPemilik; ?>"></td>
 	</tr>	
 	<tr>
 	<td>Nama Pemilik</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="namaPemilik" value="<?php echo $objPemilik->namaPemilik; ?>"></td>
+	<td><input type="text" class="form-control" name="namaPemilik" value="<?php $objPemilik = new Pemilik(); echo $objPemilik->namaPemilik; ?>"></td>
 	</tr>	
 	<tr>
 	<td>No Telepon Pemilik</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="noTelpPemilik" value="<?php echo $objPemilik->noTelpPemilik; ?>"></td>
+	<td><input type="text" class="form-control" name="noTelpPemilik" value="<?php $objPemilik = new Pemilik(); echo $objPemilik->noTelpPemilik; ?>"></td>
 	</tr>	
     <tr>
 	<td>Password</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="passwordPemilik" value="<?php echo $objPemilik->passwordPemilik; ?>"></td>
+	<td><input type="text" class="form-control" name="passwordPemilik" value="<?php $objPemilik = new Pemilik(); echo $objPemilik->passwordPemilik; ?>"></td>
 	</tr>	
 	
 	<tr>

@@ -17,7 +17,7 @@
 </thead>
 <tbody>
 	<?php
-		require_once('pages/portofolio.php'); 		
+		require_once('./class/class.Protofolio.php'); 		
 		$objPortofolio= new Portofolio(); 		
 		$arrayResult = $objPortofolio->SelectAllPortofolio();
 

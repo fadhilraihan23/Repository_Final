@@ -16,7 +16,7 @@
 </thead>
 <tbody>
 	<?php
-		require_once('./class/class.User.php'); 		
+		require_once('user.php'); 		
 		$objUser= new User(); 		
 		$arrayResult = $objUser->SelectAllUser();
 

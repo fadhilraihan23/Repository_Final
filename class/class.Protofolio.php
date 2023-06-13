@@ -22,7 +22,7 @@
 			}
 		}
         public function SelectAllPortofolio(){
-			$sql = "SELECT * FROM portofolio";
+			$sql = "SELECT * FROM informasi_portofolio";
 			$result = mysqli_query($this->connection, $sql);	
 			
 			$arrResult = Array();
@@ -32,8 +32,8 @@
 					$objportofolio= new portofolio(); 
 					$objportofolio->gambar=$data['gambar'];
 					$objportofolio->judul=$data['judul'];
-					$objportofolio->deskripsiportofolio=$data['deskripsiportofolio'];
-					$objportofolio->tanggalportofolio=$data['tanggalportofolio'];
+					$objportofolio->deskripsiportofolio=$data['deskripsiPortofolio'];
+					$objportofolio->tanggalportofolio=$data['tanggalPortofolio'];
 					$arrResult[$cnt] = $objportofolio;
 					$cnt++;
 				}   
@@ -42,8 +42,8 @@
 		}
         public function Addportofolio(){
 			
-			$sql = "INSERT INTO portofolio (gambar, judul, deskripsiportofolio,tanggalportofolio) 
-			        VALUES ('$this->gambar', '$this->judul', '$this->deskripsiportofolio', '$this->tanggalportofolio')";
+			$sql = "INSERT INTO informasi_portofolio (gambar, judul, deskripsiPortofolio,tanggalPortofolio) 
+			        VALUES ('$this->gambar', '$this->judul', '$this->deskripsiPortofolio', '$this->tanggalPortofolio')";
 				   echo $sql;
 			$this->hasil = mysqli_query($this->connection, $sql);
 			

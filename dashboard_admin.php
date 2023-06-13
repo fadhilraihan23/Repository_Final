@@ -22,8 +22,8 @@
     <div class="container">
       <div id="navbar3" class="navbar-collapse collapse">
 	    <ul class="nav navbar-nav"> 				            			
-			<li><a href="dashboard_admin.php">Home</a></li>
-			<li><a href="dashboard_admin.php?p=employeelist">Employee List</a></li>
+			<li><a href="dashboard_admin.php?p=homepage">Home</a></li>
+			<li><a href="dashboard_admin.php?p=chat">Chat</a></li>
 			<li><a href="dashboard_admin.php?p=jasalist">Jasa</a></li>
 			<li><a href="dashboard_admin.php?p=userlist">User List</a></li>
 			<li><a href="dashboard_admin.php?p=pemiliklist">Data Pemilik</a></li>

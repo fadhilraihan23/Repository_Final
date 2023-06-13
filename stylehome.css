@@ -27,7 +27,7 @@ header{
     align-items: center;
 }
 header .logo{
-    position: relative;
+    position:relative;
     max-width: 80px;
 }
 header ul{

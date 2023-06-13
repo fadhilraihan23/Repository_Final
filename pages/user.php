@@ -1,8 +1,9 @@
 <?php 
-require_once('./class/class.User.php'); 				
-$objUser = new User(); 
+require_once('user.php'); 				
+ 
 
 if(isset($_POST['btnSubmit'])){	
+	$objUser = new User();
     $objUser->namaUser = $_POST['namaUser'];	 
 	$objUser->emailUser = $_POST['emailUser'];	
     $objUser->password = $_POST['password'];
@@ -35,22 +36,22 @@ else if(isset($_GET['emailUser'])){
 	<tr>
 	<td>Email User</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="emailUser" value="<?php echo $objUser->emailUser; ?>"></td>
+	<td><input type="text" class="form-control" name="emailUser" value="<?php $objUser = new User(); echo $objUser->emailUser; ?>"></td>
 	</tr>	
 	<tr>
 	<td>Nama User</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="namaUser" value="<?php echo $objUser->namaUser; ?>"></td>
+	<td><input type="text" class="form-control" name="namaUser" value="<?php $objUser = new User(); echo $objUser->namaUser; ?>"></td>
 	</tr>	
 	<tr>
 	<td>No Telepon User</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="noTelpUser" value="<?php echo $objUser->noTelpUser; ?>"></td>
+	<td><input type="text" class="form-control" name="noTelpUser" value="<?php $objUser = new User(); echo $objUser->noTelpUser; ?>"></td>
 	</tr>	
     <tr>
 	<td>Password</td>
 	<td>:</td>
-	<td><input type="text" class="form-control" name="password" value="<?php echo $objUser->password; ?>"></td>
+	<td><input type="text" class="form-control" name="password" value="<?php $objUser = new User(); echo $objUser->password; ?>"></td>
 	</tr>	
 	
 	<tr>

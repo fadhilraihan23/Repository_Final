@@ -1,15 +1,13 @@
 Project for Web Programming and Database
 
-Live demo: 
+Live demo: https://jasadesainr2z.000webhostapp.com/
 User role: user, pemilik
-
-Akun:
 User
-username: 
-password: 
+username: -
+password: -
 Pemilik
-username: 
-password: 
+username: -
+password: -
 
 Installation guides:
 Clone this repo to your local folder

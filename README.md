@@ -1,26 +1,20 @@
-Project for Web Programming and Database
+# jasa_desain
+Project for Web Programming and Database 
 
-
-Live demo: https://jasadesainr2z.000webhostapp.com/
-
+<h4>Live demo: https://jasadesainr2z.000webhostapp.com/</h4>
 User role: user, pemilik
 
-User
-
-username: -
-
+User<br>
+username: -<br>
 password: -
 
-Pemilik
-
-username: -
-
+Pemilik<br>
+username: -<br>
 password: -
 
-Installation guides:
-
-Clone this repo to your local folder
-
-Create new database with name jasa_desain
-
-Import jasa_desain.sql under db folder
+<h4>Installation guides:</h4>
+  <ol>
+    <li>Clone this repo to your local folder </li>
+    <li>Create new database named jasa_desain</li>
+    <li>Import jasa_desain.sql under db folder</li>
+  </ol>
